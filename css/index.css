@@ -1,3 +1,5 @@
+body { font-family: Helvetica, "MS Trebuchet", sans-serif; }
+
 ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
   code.escaped { white-space: pre; }
   .vspace { margin-top:1.33em; }
