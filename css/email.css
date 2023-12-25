@@ -1,0 +1,51 @@
+/*
+  Copyright (c) 2007 Martin Kerz <konsum@kerz.org>
+  
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+*/
+
+/*EMailForm*/
+div.emailformresult {
+    font-style:italic;
+    margin-bottom: 1em;
+}
+
+form.emailform fieldset {
+    border:0; margin:0;padding:0;
+}
+
+form.emailform label {
+    float:left;
+    text-align:right;
+    width: 7.75em;
+    margin-top: 0.2em;
+    margin-right: 0.75em;
+}
+
+#content form.emailform input, #content form.emailform textarea {
+    margin-bottom: 1em;
+}
+
+#content form.emailform input.submit {
+    margin-left:7.5em;
+
+}
+
+#content form.emailform textarea {
+    width: 25em;
+    height:12em;
+}
+
+form.emailform {
+    font-size: 1.2em;
+}
+ 
+ 

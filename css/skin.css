@@ -1,0 +1,190 @@
+/*  GLOBAL  */
+
+body {
+	font-family: Helvetica, "MS Trebuchet", sans-serif;
+	/*background-color: #183152;*/
+		/*color: #D8DDED;*/
+	background-color:#545454;
+	color: #EFEFEF;
+	font-size: 12px;
+	margin-top: 25px;
+	padding-bottom: 20px;
+}
+
+a {
+	text-decoration: none;	
+	/*color: #D8DDED*/
+	color: #EFEFEF;
+}
+
+
+
+/*  TITLE  */
+/*utahinrich ueberschrift*/
+#title {
+	width: 220px;
+	font-size: 34px;
+	text-align: right;
+	float: left;
+	height: 44px;
+	color: #EFEFEF;
+	xborder: 1px solid #999;
+}
+
+#title a{
+	background: transparent url('colon.png') left center no-repeat;
+	padding-left:15px;
+	padding-top:-1px;
+}
+/*  MENU  */
+/* menu oben rechts*/
+#menu {
+	xborder:1px solid #FFF;
+	font-size: 15px;
+	width: 590px;
+	height: 35px;
+	padding-top: 12px;
+	margin-left: 200px;
+	text-align:right;
+	color:#EFEFEF;
+}
+
+#menu a.selflink, #menu .selflink a{
+	color:#F79900;
+}
+
+#menu a {
+	margin-left: 5px;
+}
+
+
+/*  SIDEBAR  */
+/*menu links vertical an der seite*/
+#sidebar {
+	margin-top: 98px;
+	width:220px;
+	float: left;
+	xborder: 1px solid #999;
+	clear: both;
+	color:#545454;
+}
+
+/* list items in der sidebar*/
+#sidebar li {
+	list-style-type: none;
+	text-align: right;
+	margin-bottom: 10px;
+	line-height: 20px;
+	color:#545454;
+}
+
+/*links die angeklickt sind in der sidebar*/
+#sidebar a.selflink, #sidebar .selflink a {
+	font-weight: bold;
+	font-size: 14px;
+	color: #F79900;
+}
+
+/*  CONTENT  */
+/*seiten inhalt (kasten in der mitte)*/
+#content {
+	margin-top: 30px;
+	margin-left: 245px;
+	width:550px;
+	xborder: 1px solid #999;
+	min-height: 300px;
+}
+
+#content a{
+	color:#F79900;
+}
+
+/*allgemeine Ueberschrift*/
+h1,h1 a {font-size: 40px; margin-top: 0; color:#EFEFEF !important;}
+
+/*allgemeine Ueberschrift*/
+h2 {font-weight: normal; font-size: 20px;}
+
+.projektlink a {color:#EFEFEF !important;}
+
+/*heller hintergrund kasten*/
+.bright {
+	/*background-color: #D8DDED;*/
+	/*color: 183152;*/
+	background-color:#EFEFEF;
+	color:#545454;
+	padding: 5px 10px;
+}
+
+/*ueberschrift im hellen hintergrund kasten*/
+.bright h2 {
+	margin-top: 5px;
+}
+
+.bright a {
+	color: #F79900;
+}
+
+
+
+
+/*  TABLES  */
+
+/*gilt fuer alle publications whatsoever*/
+table.pub td {
+	/*abstand nach dem pub*/
+	padding-bottom: 12px;	
+}
+
+/*project unteransicht (gruppiert)*/
+table.projects {
+	margin: -20px 0 0 -20px !important;
+}
+
+table.projects td:last-child {
+	padding: 5px;	
+}
+
+
+table.projects td {
+	/*background-color: #87A2B5;
+	color: #1D2F50;*/
+	background-color:#545454;
+	color:#EFEFEF;
+}
+
+table.projects a {	color: #EFEFEF;}
+
+#tools_commands a {
+	margin: 0;
+	padding: 0;	
+}
+
+.rfloat img {margin-bottom:5px;}
+
+table.pub td p {
+ margin-left: -2px;
+}
+
+
+/*  EMAIL FORM  */
+
+form table th {
+	font-weight: normal;
+	vertical-align: top;
+}
+
+form table td div.seccode {
+	font-size: 0.75em;
+	line-height: 2em;
+}
+
+form table td input#ACodeEntered {
+	float: left; margin-right: 0.5em;
+}
+
+#content form.emailform input.submit {
+	margin-left: 0;
+	margin-top: 1em;
+}
+
