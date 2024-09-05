@@ -52,15 +52,59 @@
         <p>
           The Whitehouse discussed regulations in 2023 with leading companies in AI. This led to regulations with the AI Bill of Rights as well as pledges for watermarking AI content. (<a href="https://www.reuters.com/technology/openai-google-others-pledge-watermark-ai-content-safety-white-house-2023-07-21/">Reuters Article</a>).
           <br> 
-          An analysis into the robustness of the generative-text watermarking technique proposed by the team at Maryland (<a href="https://arxiv.org/abs/2301.10226">arXiv</a>). 
+          This post will be focusing on generative-text and, in particular, the article looks at the proposal of the Maryland Watermark (<a href="https://arxiv.org/abs/2301.10226">arXiv</a>).
           <br> 
-          
+          As part of my Bachelor's dissertation, I investigated the robustness of the Maryland Watermark through attacking techniques, such as paraphrasing and word-replacement. 
+        </p>  
+        <p style="margin-top: 1em">
+          This article is an overview of my dissertation and will not go into the technical details. Click <a href="https://github.com/SamSJackson/Level4-Proj/blob/main/Dissertation.pdf">here</a> for the dissertation. 
         </p>
         <h4>Objective</h4>
         <p>
-          The research aimed to uncover how difficult it was for attacking techniques, such as paraphrasing and word replacement, to remove the watermark.
-          
-          
+          Analyse the difficulty for attacking techniques, such as paraphrasing and word replacement, to remove the Maryland Watermark.
+        </p>
+
+        <h4>Method</h4>
+        <p>
+          To assess the Maryland watermark, text was generated using the watermark and consequently attacked with three different techniques.
+          The attacking techniques can be summarised as follows: 
+          <ol>
+            <li>Paragraph-based Paraphasing (paraphasing entire paragraphs in context)</li>
+            <li>Sentence-based Paraphrasing (paraphrasing sentences in context)</li>
+            <li>Word Replacement</li>
+          </ol>
+
+          The effectiveness of the attacks is determined through watermark detection completed before and after the attack. 
+        </p>
+        
+        <p style="margin-top: 1em;">
+          To complete paragraph-based paraphrasing, I finetuned a Seq2Seq model, google's t5-large-nl32, with the use of the <a href="https://github.com/katherinethai/par3">Par3</a> dataset.
+
+          Word Replacement was completed through POS tagging (<a href="https://huggingface.co/flair/pos-english">Model</a>) alongside the WordNet corpus (<a href="https://wordnet.princeton.edu/">WordNet</a>). 
+          <br>
+          Sentence-based paraphrasing was completed using a finetuned model, available on <a href="https://huggingface.co/humarin/chatgpt_paraphraser_on_T5_base">HuggingFace</a>.
+        </p>
+
+        <h4>Research Questions</h4>
+        <p>
+            <ol>
+              <li>Does paraphrasing recursively degrade accuracy in detection of the Maryland Watermark?</li>
+              <li>Is sentence-based paraphrasing more effective than paragraph-based paraphrasing when dealing with the removal of the Maryland Watermark?</li>
+              <li>Is a low-cost, word-replacement algorithm sufficient to remove the Maryland Watermark?</li>
+              <li>Are the attacking methods feasible for use within an academic context with respect to the Maryland Watermark?</li>
+            </ol>
+        </p>
+        <h3>Results</h3>
+        <p>
+          Summarily, I shall answer the research questions without diving into analysis. 
+          <ol>
+            <li>Paraphrasing recursively does not degrade accuracy in detection of the Maryland Watermark, linearly or non-linearly.</li>
+            <li>I argue that the paraphraser does not matter, despite paraphraser performing slightly better.</li>
+            <li>The word replacement method was wholly insufficient to remove the Maryland Watermark.</li>
+            <li>Through a discussion of memory requirements and quality of paraphrasing, I note that sentence-based paraphasing removes the Maryland Watermark to a quality sufficient for use in an academic context.</li>
+          </ol> 
+
+          The actual analysis is available in my dissertation and provides visual and numerical arguments for my results.
         </p>
     </div>
 </div>
