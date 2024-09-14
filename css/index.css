@@ -51,7 +51,7 @@ a.varlink { text-decoration:none;}
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 300px;
   text-align: center;
 }
@@ -61,6 +61,10 @@ a.varlink { text-decoration:none;}
 }
 
 .wrapper .col2 {
+  padding-left: 10px;
+}
+
+.wrapper .col3 {
   padding-left: 10px;
 }
 
