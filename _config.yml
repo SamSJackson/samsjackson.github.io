@@ -157,15 +157,15 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: true 
   news:
     defaults:
       layout: post
-    output: true
+    output: true 
   projects:
     output: true
   teachings:
-    output: true
+    output: true 
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -199,6 +199,7 @@ exclude:
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
+  - _pages.old/
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
