@@ -1,0 +1,6 @@
+These are ideas for posts for when I must write 10 minutes each morning about a topic.
+
+- Edinburgh Science Festival - Volunteering experience
+- Usage of GPU's Warp MMA in iterative solvers
+- Developing persistent kernels for iterative solvers
+- High-level: Optimising iterative solvers for GPUs 
