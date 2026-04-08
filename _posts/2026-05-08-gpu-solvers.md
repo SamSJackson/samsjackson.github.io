@@ -3,7 +3,7 @@ layout: post
 title: Optimising Iterative Solvers for GPUs
 date: 2026-04-08 00:09:00
 description: We explore how one can optimise iterative solvers for solving on GPU systems
-tags: solvers linear-algebra gpu
+tags: [solvers, linear-algebra, gpu]
 categories: sample-posts
 ---
 
