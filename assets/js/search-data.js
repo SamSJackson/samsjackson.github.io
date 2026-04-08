@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-optimising-iterative-solvers-for-gpus",
+        
+          title: "Optimising Iterative Solvers for GPUs",
+        
+        description: "We explore how one can optimise iterative solvers for solving on GPU systems",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/gpu-solvers/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
