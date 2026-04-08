@@ -4,10 +4,8 @@ title: Optimising Iterative Solvers for GPUs
 date: 2026-05-08 00:09:00
 description: We explore how one can optimise iterative solvers for solving on GPU systems
 tags: solvers linear-algebra gpu 
-categories: solvers
-pseudocode: true
+categories: sample-posts
 ---
-
 
 ## Basics of Linear Solvers
 Linear systems arise frequently in the form of optimisation problems, particularly amidst the solving of PDEs. Through methods like the Finite Element Method (FEM) and the Finite Volume Method (FVM), systems of the form $\mathbf{A}x = b$, where $\mathbf{A}$ is a matrix and $x, b$ are vectors, must be solved.
