@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-optimising-iterative-solvers-for-gpus",
+        },{id: "post-epcc-at-edinburgh-science-festival-2026",
+        
+          title: "EPCC at Edinburgh Science Festival 2026",
+        
+        description: "What it was like for EPCC at the Edinburgh Science festival!",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/esf/";
+          
+        },
+      },{id: "post-optimising-iterative-solvers-for-gpus",
         
           title: "Optimising Iterative Solvers for GPUs",
         
